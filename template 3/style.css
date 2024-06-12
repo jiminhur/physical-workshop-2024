@@ -1,12 +1,52 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
 @import url(.cormorant-garamond-medium {
   font-family: "Cormorant Garamond", serif;});
-@import url(.averia-serif-libre-bold {
-  font-family: "Averia Serif Libre", serif;});
+@import url(.crimson-text-regular {
+  font-family: "Crimson Text", serif;}):
+  
+  font-weight: 400;
+  font-style: normal;
+}
+
+.crimson-text-semibold {
+  font-family: "Crimson Text", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.crimson-text-bold {
+  font-family: "Crimson Text", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.crimson-text-regular-italic {
+  font-family: "Crimson Text", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.crimson-text-semibold-italic {
+  font-family: "Crimson Text", serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.crimson-text-bold-italic {
+  font-family: "Crimson Text", serif;
+  font-weight: 700;
+  font-style: italic;
+});
+
 * {
   box-sizing: border-box;
   position: relative;
 }
+
+
+
+
+
 
 html {
   font-size: 16px;
@@ -16,7 +56,7 @@ body {
   margin: 0;
   padding: 0;
   background: #ffffff;
-  font-family: "Averia Serif Libre", serif;
+  font-family: "Crimson Text", serif;
   font-weight: 700;
   font-style: normal;
   word-break: keep-all;
@@ -28,18 +68,18 @@ a, a:link, a:visited {
 }
 
 h1 {
-  font-family: "Averia Serif Libre", serif;
+  font-family: "Crimson Text", serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 10rem;
-  color: #00ffcc;
+  font-size: 8rem;
+  color: #000000;
   margin: 0;
   text-align: center;
 }
 
 h2 {
-  font-family: "Cormorant Garamond", serif;
-  font-weight: 500;
+  font-family: "Crimson Text", serif;
+  font-weight: 700;
   font-style: normal;
   font-size: 2.8rem;
   font-weight: 400;
@@ -78,8 +118,8 @@ h2 {
 }
 
 figcaption {
-  font-family: "Cormorant Garamond", serif;
-  font-weight: 500;
+  font-family: "Crimson Text", serif;
+  font-weight: 700;
   font-style: normal;
   font-size: 1em;
   text-align: center;
