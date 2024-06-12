@@ -1,5 +1,8 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
-
+@import url(.cormorant-garamond-medium {
+  font-family: "Cormorant Garamond", serif;});
+@import url(.averia-serif-libre-bold {
+  font-family: "Averia Serif Libre", serif;});
 * {
   box-sizing: border-box;
   position: relative;
@@ -13,29 +16,34 @@ body {
   margin: 0;
   padding: 0;
   background: #ffffff;
-  font-family: "Pretendard", sans-serif;
+  font-family: "Averia Serif Libre", serif;
+  font-weight: 700;
+  font-style: normal;
   word-break: keep-all;
 }
 
 a, a:link, a:visited {
-  color: #BC8F8F;
+  color: #f90000;
   text-decoration: none;
 }
 
 h1 {
-  font-family: "times", serif;
-  font-size: 2.8rem;
-  font-weight: 400;
-  color: #000000;
+  font-family: "Averia Serif Libre", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 10rem;
+  color: #00ffcc;
   margin: 0;
   text-align: center;
 }
 
 h2 {
-  font-family: "times", serif;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+  font-style: normal;
   font-size: 2.8rem;
   font-weight: 400;
-  color: #BC8F8F;
+  color: #ffffff;
   margin: 0;
   text-align: center;
 }
@@ -70,7 +78,9 @@ h2 {
 }
 
 figcaption {
-  font-family: "Pretendard", sans-serif;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+  font-style: normal;
   font-size: 1em;
   text-align: center;
 }
@@ -89,7 +99,10 @@ figcaption {
 }
 
 .main {
-  min-height: 100vh;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+  font-style: normal;
+  min-height: 120vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -97,40 +110,50 @@ figcaption {
 }
 
 .contents {
-  max-width: 980px;
-  margin: 10vh auto;
-  padding: 0 1rem;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+  font-style: normal;
+  max-width: 600px;
+  margin: 16vh auto;
+  padding: 0.8rem;
 }
 
 .contents p {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+  font-style: normal;
   font-size: 1.7rem;
-  line-height: 1.7em;
+  line-height: 1em;
   padding-bottom: 0;
 }
 
 .contents p span {
-  font-family: "times";
-  font-size: 1em;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.2rem;
+  line-height: 0.5rem;
 }
 
 
-.photobooth {
-  background: white;
-  max-width: 150rem;
-  margin: 2rem auto;
-  border-radius: 2px;
+.column {
+  float: left;
+  width: 20%;
+  padding: 5px;
 }
 
-/*clearfix*/
-.booth {
-  width: 800px;
-  background: #ccc;
-  border: 10px solid #ddd;
-  margin: 0 auto;
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
-video { 
-  max-width: 100%; 
-  width: 320px; 
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
 }
 
 table {
