@@ -1,10 +1,320 @@
-    body{
-            background-color: rgb(242, 255, 0);
-         }
-         h1{
-            font-size: 36px;
-            font-weight:   411;
-            line-height:     44px;
-            letter-spacing: -.5em;
-            line-height: 44px;
-         }
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+@import url(.cormorant-garamond-medium {
+  font-family: "Cormorant Garamond", serif;});
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+  font-family: "Crimson Text", serif;});
+* {
+  box-sizing: border-box;
+  position: relative;
+}
+
+
+
+
+html {
+  font-size: 16px;
+}
+
+
+/* 배경 이미지를 추가하고 고정하기 위한 CSS */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url('asset/대지 1.png') no-repeat center center;
+  background-size: cover;
+  z-index: -1;
+  opacity: 100; /* 이미지 투명도 조절 */
+}
+
+/* 필요 시 기존의 body 스타일을 조정할 수도 있습니다. */
+body {
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  font-family: "Crimson Text", serif;
+  font-weight: 700;
+  font-style: normal;
+  word-break: keep-all;
+  overflow-x: hidden; /* 수평 스크롤바를 방지 */
+}
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  font-family: "Crimson Text", serif;
+  font-weight: 700;
+  font-style: normal;
+  word-break: keep-all;
+}
+
+a, a:link, a:visited {
+  color: #ff0000;
+  text-decoration: none;
+  text-align: center;
+  font-family: "Crimson Text", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 3.rem;
+}
+
+h1 {
+  font-family: "Crimson Text", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.6rem;
+  color: #ff0000;
+  margin: 30;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Crimson Text", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2.8rem;
+  font-weight: 400;
+  color: #0dff00;
+  margin: 0;
+  text-align: center;
+}
+
+h3 {
+  font-family: "Crimson Text", serif;
+  font-weight: 700;
+  font-style:italic;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #000000;
+  margin: 0;
+  text-align: center;
+}
+
+
+.header_wrap {
+  width: 100vw;
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  height: 5vh;
+  background-color: #000000;
+  list-style-type: none;
+  text-align: center;
+  z-index: 999;
+}
+
+.header_wrap li {
+  display: inline-block;
+  font-size: 1.2rem;
+  line-height: 5vh;
+  padding-left: 1vw;
+}
+
+.figure { 
+  width: 100%; 
+  margin: 0 auto; 
+  text-align: center; 
+}
+
+.figure img { 
+  max-width: 100%;
+}
+
+figcaption {
+  font-family: "Crimson Text", serif;
+  font-weight: 00;
+  font-style: normal;
+  font-size: 1em;
+  text-align: center;
+}
+
+.background {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+}
+
+.background img { 
+  max-width: 100%; 
+}
+
+.main {
+  font-family: "Crimson Text", serif;
+  font-weight: 500;
+  font-style: normal;
+  min-height: 120vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contents {
+  font-family: "Crimson Text", serif;
+  font-weight: 500;
+  font-style: normal;
+  max-width: 600px;
+  margin: 16vh auto;
+  padding: 0.8rem;
+  font-size: 3rem;
+}
+
+.whitefont {
+  font-family: "Crimson Text", serif;
+  font-weight: 500;
+  font-style: normal;
+  max-width: 600px;
+  margin: 16vh auto;
+  padding: 0.8rem;
+  font-size: 0.5rem;
+  color: #bbff00;
+}
+
+
+.forinfo{
+  font-family: "Crimson Text", serif;
+  font-weight: 500;
+  font-style: normal;
+  padding: 2rem;
+  font-size: 1.6rem;
+  text-align: center;
+  color: #ff0000;
+}
+
+.contents p {
+  font-family: "Crimson Text", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.7rem;
+  line-height: 1em;
+  padding-bottom: 0;
+}
+
+.contents p span {
+  font-family: "Crimson Text", serif;
+  font-weight: 00;
+  font-style: normal;
+  font-size: 1.2rem;
+  line-height: 0.5rem;
+}
+
+
+.column {
+  float: left;
+  width: 20%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+
+table {
+  font-size: 1rem;
+  line-height: 1.4em;
+  text-align: center;
+  background: #000000;
+  border-top: 2px solid #000000;
+  border-bottom: 2px solid #000000;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table tr, table td, table th {
+  border: 1px solid #E2E2E2;
+  border-left: none;
+  border-right: none;
+}
+
+table td, table th {
+  padding: 0.3em 0 0.3em;
+}
+
+table td:nth-child(2) {
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1024px) {
+  .contents p {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .figure {
+    width: 100%;
+    padding: 0rem;
+  }
+  .figure img {
+    width: 100%;
+  }
+  .background {
+    padding: 0;
+  }
+  figcaption {
+    font-family: "Pretendard", sans-serif;
+    font-size: 1em;
+    text-align: left;
+    padding: 0 1rem;
+  }
+  table {
+    font-size: 1.2rem;
+    letter-spacing: 0.2px;
+    line-height: 1.4em;
+  }
+  table td, table th {
+    padding: 0.4em 0 0.3em;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .contents p {
+    font-size: 0.6rem;
+  }
+}
+
+
+@media screen and (max-width: 350px) {
+  .contents p {
+    font-size: 1.1rem;
+  }
+}
+
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+
+.videoWrapper iframe {
+  border: 0px solid #000000;
+  padding: 0;
+  padding-top: 0.5rem;
+  border-radius: 0px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  autoplay
+}
